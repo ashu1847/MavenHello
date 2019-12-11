@@ -1,8 +1,10 @@
 FROM java:8
 
-WORKDIR /
+WORKDIR /home/hello-docker/
 
-ADD jb-hello-world-maven-0.1.0.jar jb-hello-world-maven-0.1.0.jar
+ADD . /home/hello-docker/
+
+ADD jb-hello-world-maven-0.1.0.jar
 
 EXPOSE 8383
 
